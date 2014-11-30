@@ -17,7 +17,7 @@ This document depicts Azure ML Recommendations APIs.
 <li>[2. Limitations](#2.-limitations)</li>
 <li>[3. APIs – General Information](#3.-integration)</li>
 <ul>
-	3.1. Authentication](#3.1.-authentication)<br>
+	[3.1. Authentication](#3.1.-authentication)<br>
 	[3.2. Service URI](#3.2.-service-uri)<br>
 	[3.3. API Version](#3.3.-api-version)
 </ul>
@@ -2489,3 +2489,4 @@ This document is provided “as-is”. Information and views expressed in this d
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.<br><br>
 This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.<br><br>
 © 2014 Microsoft. All rights reserved.
+
