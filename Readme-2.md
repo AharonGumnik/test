@@ -13,15 +13,15 @@ This document depicts Azure ML Recommendations APIs.
 ##Contents
 
 <ul>
-<li>[1. General Overview](#1.-general-overview)</li>
-<li>[2. Limitations](#2.-limitations)</li>
-<li>[3. APIs – General Information](#3.-integration)</li>
+[1. General Overview](#1.-general-overview)<br>
+[2. Limitations](#2.-limitations)<br>
+[3. APIs – General Information](#3.-integration)
 <ul>
 	[3.1. Authentication](#3.1.-authentication)<br>
 	[3.2. Service URI](#3.2.-service-uri)<br>
 	[3.3. API Version](#3.3.-api-version)
 </ul>
-<li>[4. Model Basic](#4.-model-basic)</li>
+[4. Model Basic](#4.-model-basic)
 <ul>
 [4.1. Create Model](#4.1.-create-a-model)<br>
 [4.2. Get Model](#4.2.-get-model)<br>
@@ -29,13 +29,13 @@ This document depicts Azure ML Recommendations APIs.
 [4.4. Update Model](#4.4.-update-model)<br>
 [4.5. Delete Model](#4.5.-delete-model)<br>
 </ul>
-<li>[5. Model Advanced](#5.-model-advanced)</li>
+[5. Model Advanced](#5.-model-advanced)
 <ul>
-<li>[5.1. Model Data Insight](#5.1.-model-data-insight)</li>
-<li>[5.2. Model Insight](#5.2.-model-insight)</li>
-<li>[5.3. Get Model Sample](#5.3.-get-model-sample)</li>
+[5.1. Model Data Insight](#5.1.-model-data-insight)<br>
+[5.2. Model Insight](#5.2.-model-insight)<br>
+[5.3. Get Model Sample](#5.3.-get-model-sample)
 </ul>
-<li>[6. Model Business Rules](#6.-model-business-rules)</li>
+[6. Model Business Rules](#6.-model-business-rules)
 <ul>
 [6.1. Get Model Rules](#6.1.-get-model-rules)<br>
 [6.2. Add Rule](#6.2.-add-rule)<br>
@@ -44,25 +44,25 @@ This document depicts Azure ML Recommendations APIs.
 </ul>
 <li>[7. Catalog](#7.-catalog)</li>
 <ul>
-<li>[7.1. Import catalog data](#7.1.-import-catalog-data)</li>
-<li>[7.2. Get Catalog](#7.2.-get-catalog)</li>
-<li>[7.3. Get Catalog Items by Token](#7.3.-get-catalog-items-by-token)</li>
+[7.1. Import catalog data](#7.1.-import-catalog-data)<br>
+[7.2. Get Catalog](#7.2.-get-catalog)<br>
+[7.3. Get Catalog Items by Token](#7.3.-get-catalog-items-by-token)
 </ul>
-<li>[8. Usage Data](#8.-usage-data)</li>
+[8. Usage Data](#8.-usage-data)
 <ul>
-<li>[8.1. Import usage data](#8.1.-import-usage-data)</li>
+[8.1. Import usage data](#8.1.-import-usage-data)
 <ul>
 [8.1.1. Uploading file](#8.1.1.-uploading-file)<br>
 [8.1.2. Using data acquisition](#8.1.2.-using-data-acquisition)
 </ul>
-<li>[8.2. List Model Usage Files](#8.2.-list-model-usage-files)</li>
-<li>[8.3. Get Usage Statistics](#8.3.-get-usage-statistics)</li>
-<li>[8.4. Get Usage File Sample](#8.4.-get-usage-file-sample)</li>
-<li>[8.5. Get Model Usage File](#8.5.-get-model-usage-file)</li>
-<li>[8.6. Delete Usage File](#8.6.-delete-usage-file)</li>
-<li>[8.7. Delete All Usage Files](#8.7.-delete-all-usage-files)</li>
+[8.2. List Model Usage Files](#8.2.-list-model-usage-files)<br>
+[8.3. Get Usage Statistics](#8.3.-get-usage-statistics)<br>
+[8.4. Get Usage File Sample](#8.4.-get-usage-file-sample)<br>
+[8.5. Get Model Usage File](#8.5.-get-model-usage-file)<br>
+[8.6. Delete Usage File](#8.6.-delete-usage-file)<br>
+[8.7. Delete All Usage Files](#8.7.-delete-all-usage-files)<br>
 </ul>
-<li>[9. Build](#9.-build)</li>
+[9. Build](#9.-build)
 <ul>
 [9.1. Build a model](#9.1.-build-a-model)<br>
 [9.2. Get Builds Status of a Model](#9.2.-get-builds-status-of-a-model)<br>
@@ -71,17 +71,17 @@ This document depicts Azure ML Recommendations APIs.
 [9.5. Cancel Build](#9.5.-cancel-build)<br>
 [9.6. Get Build Parameters](#9.6.-get-build-parameters)<br>
 </ul>
-<li>[10. Recommendation](#10.-recommendation)</li>
+[10. Recommendation](#10.-recommendation)
 <ul>
 [10.1. Get Recommendations](#10.1.-get-recommendations)<br>
 </ul>
-<li>[11. Notifications](#11.-notifications)</li>
+[11. Notifications](#11.-notifications)
 <ul>
 [11.1. Get Notifications](#11.1.-get-notifications)<br>
 [11.2. Delete Model Notifications](#11.2.-delete-model-notifications)<br>
 [11.3. Delete User Notifications](#11.3.-delete-user-notifications)<br>
 </ul>
-<li>[12. Legal](#12.-legal)</li>
+[12. Legal](#12.-legal)
 </ul>
 
 ##1. General Overview
@@ -2484,9 +2484,8 @@ Deletes all notifications for all models
 
 HTTP Status code: 200
 
-##12.	Legal
+##12. Legal
 This document is provided “as-is”. Information and views expressed in this document, including URL and other Internet Web site references, may change without notice.<br><br>
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.<br><br>
 This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.<br><br>
 © 2014 Microsoft. All rights reserved.
-
