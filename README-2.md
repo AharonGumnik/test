@@ -1258,7 +1258,7 @@ OData XML
 	</feed>
 
 
-####8.1.2.	Using data acquisition
+####8.1.2. Using data acquisition
 This section shows how to send events in real time to Azure ML Recommendations usually from your web site.
 
 | HTTP Method | URI |
@@ -1645,7 +1645,7 @@ Delete all model usage files
 
 HTTP Status code: 200
 
-##9.	Build
+##9. Build
 
 ###9.1.	Build a model
 
@@ -2188,7 +2188,7 @@ The table below depicts for each key what is the value it represents
 	</feed>
 
 ##10. Recommendation
-###10.1.	Get Recommendations
+###10.1. Get Recommendations
 
 | HTTP Method | URI |
 |:--------|:--------|
@@ -2365,7 +2365,7 @@ OData XML
  	 </entry>
 	</feed>
 
-##11.	Notifications
+##11. Notifications
 Azure ML Recommendations creates notification when there are persistent errors that happen in the system. There are 3 type of notifications:
 1.	Build failure – this notification is triggered for every build failure.
 2.	Data Acquisition processing failure - this notification is triggered when we have more than 100 errors in the last 5 minutes in the processing of usage events per model.
