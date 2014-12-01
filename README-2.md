@@ -13,7 +13,7 @@ This document depicts Azure ML Recommendations APIs.
 
 - [1. General Overview](#1-general-overview)
 - [2. Limitations](#2-limitations)
-- [3. APIs – General Information](#3-apis-–-general-information)
+- [3. APIs – General Information](#3-apis--general-information)
 	- [3.1. Authentication](#31-authentication)
 	- [3.2. Service URI](#32-service-uri)
 	- [3.3. API Version](#33-api-version)
