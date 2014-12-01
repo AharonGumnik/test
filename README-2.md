@@ -31,7 +31,7 @@ This document depicts Azure ML Recommendations APIs.
 	- [6.1. Get Model Rules](#6.1.-get-model-rules)
 	- [6.2. Add Rule](#6.2.-add-rule)
 	- [6.3. Delete Rule](#6.3.-delete-rule)
-- [6.4. Delete All Rules](#6.4.-delete-all-rules)
+	- [6.4. Delete All Rules](#6.4.-delete-all-rules)
 - [7. Catalog](#7.-catalog)
 	- [7.1. Import catalog data](#7.1.-import-catalog-data)
 	- [7.2. Get Catalog](#7.2.-get-catalog)
