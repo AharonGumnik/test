@@ -5,84 +5,61 @@ API documentation" metaKeywords="" services="machine-learning" solutions="" docu
 
 <tags ms.service="machine-learning" ms.workload="data-services" ms.tgt_pltfrm="na" ms.devlang="na" ms.topic="article" ms.date="10/14/2014" ms.author="AharonGumnik" />
 
-# Quick start guide for the Azure Machine Learning Recommendations – 
-API documentation
+#Azure Machine Learning Recommendations – <br>API documentation
 
 This document depicts Azure ML Recommendations APIs.
 
 ##Contents
 
-<ul>
-[1. General Overview](#1.-general-overview)<br>
-[2. Limitations](#2.-limitations)<br>
-[3. APIs – General Information](#3.-integration)
-<ul>
-	[3.1. Authentication](#3.1.-authentication)<br>
-	[3.2. Service URI](#3.2.-service-uri)<br>
-	[3.3. API Version](#3.3.-api-version)
-</ul>
-[4. Model Basic](#4.-model-basic)
-<ul>
-[4.1. Create Model](#4.1.-create-a-model)<br>
-[4.2. Get Model](#4.2.-get-model)<br>
-[4.3. Get All Models](#4.3.-get-all-models)<br>
-[4.4. Update Model](#4.4.-update-model)<br>
-[4.5. Delete Model](#4.5.-delete-model)<br>
-</ul>
-[5. Model Advanced](#5.-model-advanced)
-<ul>
-[5.1. Model Data Insight](#5.1.-model-data-insight)<br>
-[5.2. Model Insight](#5.2.-model-insight)<br>
-[5.3. Get Model Sample](#5.3.-get-model-sample)
-</ul>
-[6. Model Business Rules](#6.-model-business-rules)
-<ul>
-[6.1. Get Model Rules](#6.1.-get-model-rules)<br>
-[6.2. Add Rule](#6.2.-add-rule)<br>
-[6.3. Delete Rule](#6.3.-delete-rule)<br>
-[6.4. Delete All Rules](#6.4.-delete-all-rules)<br>
-</ul>
-<li>[7. Catalog](#7.-catalog)</li>
-<ul>
-[7.1. Import catalog data](#7.1.-import-catalog-data)<br>
-[7.2. Get Catalog](#7.2.-get-catalog)<br>
-[7.3. Get Catalog Items by Token](#7.3.-get-catalog-items-by-token)
-</ul>
-[8. Usage Data](#8.-usage-data)
-<ul>
-[8.1. Import usage data](#8.1.-import-usage-data)
-<ul>
-[8.1.1. Uploading file](#8.1.1.-uploading-file)<br>
-[8.1.2. Using data acquisition](#8.1.2.-using-data-acquisition)
-</ul>
-[8.2. List Model Usage Files](#8.2.-list-model-usage-files)<br>
-[8.3. Get Usage Statistics](#8.3.-get-usage-statistics)<br>
-[8.4. Get Usage File Sample](#8.4.-get-usage-file-sample)<br>
-[8.5. Get Model Usage File](#8.5.-get-model-usage-file)<br>
-[8.6. Delete Usage File](#8.6.-delete-usage-file)<br>
-[8.7. Delete All Usage Files](#8.7.-delete-all-usage-files)<br>
-</ul>
-[9. Build](#9.-build)
-<ul>
-[9.1. Build a model](#9.1.-build-a-model)<br>
-[9.2. Get Builds Status of a Model](#9.2.-get-builds-status-of-a-model)<br>
-[9.3. Get Builds Status of a User](#9.3.-get-builds-status-of-a-user)<br>
-[9.4. Delete Build](#9.4.-delete-build)<br>
-[9.5. Cancel Build](#9.5.-cancel-build)<br>
-[9.6. Get Build Parameters](#9.6.-get-build-parameters)<br>
-</ul>
-[10. Recommendation](#10.-recommendation)
-<ul>
-[10.1. Get Recommendations](#10.1.-get-recommendations)<br>
-</ul>
-[11. Notifications](#11.-notifications)
-<ul>
-[11.1. Get Notifications](#11.1.-get-notifications)<br>
-[11.2. Delete Model Notifications](#11.2.-delete-model-notifications)<br>
-[11.3. Delete User Notifications](#11.3.-delete-user-notifications)<br>
-</ul>
-[12. Legal](#12.-legal)
-</ul>
+- [1. General Overview](#1.-general-overview)
+- [2. Limitations](#2.-limitations)
+- [3. APIs – General Information](#3.-integration)
+	- [3.1. Authentication](#3.1.-authentication)
+	- [3.2. Service URI](#3.2.-service-uri)
+	- [3.3. API Version](#3.3.-api-version)
+- [4. Model Basic](#4.-model-basic)
+	- [4.1. Create Model](#4.1.-create-a-model)
+	- [4.2. Get Model](#4.2.-get-model)
+	- [4.3. Get All Models](#4.3.-get-all-models)
+	- [4.4. Update Model](#4.4.-update-model)
+	- [4.5. Delete Model](#4.5.-delete-model)
+- [5. Model Advanced](#5.-model-advanced)
+	- [5.1. Model Data Insight](#5.1.-model-data-insight)
+	- [5.2. Model Insight](#5.2.-model-insight)
+	- [5.3. Get Model Sample](#5.3.-get-model-sample)
+- [6. Model Business Rules](#6.-model-business-rules)
+	- [6.1. Get Model Rules](#6.1.-get-model-rules)
+	- [6.2. Add Rule](#6.2.-add-rule)
+	- [6.3. Delete Rule](#6.3.-delete-rule)
+- [6.4. Delete All Rules](#6.4.-delete-all-rules)
+- [7. Catalog](#7.-catalog)
+	- [7.1. Import catalog data](#7.1.-import-catalog-data)
+	- [7.2. Get Catalog](#7.2.-get-catalog)
+	- [7.3. Get Catalog Items by Token](#7.3.-get-catalog-items-by-token)
+- [8. Usage Data](#8.-usage-data)
+	- [8.1. Import usage data](#8.1.-import-usage-data)
+		- [8.1.1. Uploading file](#8.1.1.-uploading-file)
+		- [8.1.2. Using data acquisition](#8.1.2.-using-data-acquisition)
+	- [8.2. List Model Usage Files](#8.2.-list-model-usage-files)
+	- [8.3. Get Usage Statistics](#8.3.-get-usage-statistics)
+	- [8.4. Get Usage File Sample](#8.4.-get-usage-file-sample)
+	- [8.5. Get Model Usage File](#8.5.-get-model-usage-file)
+	- [8.6. Delete Usage File](#8.6.-delete-usage-file)
+	- [8.7. Delete All Usage Files](#8.7.-delete-all-usage-files)
+- [9. Build](#9.-build)
+	- [9.1. Build a model](#9.1.-build-a-model)
+	- [9.2. Get Builds Status of a Model](#9.2.-get-builds-status-of-a-model)
+	- [9.3. Get Builds Status of a User](#9.3.-get-builds-status-of-a-user)
+	- [9.4. Delete Build](#9.4.-delete-build)
+	- [9.5. Cancel Build](#9.5.-cancel-build)
+	- [9.6. Get Build Parameters](#9.6.-get-build-parameters)
+- [10. Recommendation](#10.-recommendation)
+	- [10.1. Get Recommendations](#10.1.-get-recommendations)<br>
+- [11. Notifications](#11.-notifications)
+	- [11.1. Get Notifications](#11.1.-get-notifications)<br>
+	- [11.2. Delete Model Notifications](#11.2.-delete-model-notifications)
+	- [11.3. Delete User Notifications](#11.3.-delete-user-notifications)
+- [12. Legal](#12.-legal)
 
 ##1. General Overview
 This document is an API reference. You should start with the “Azure ML Recommendation – Quick Start” document.
