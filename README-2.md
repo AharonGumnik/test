@@ -11,13 +11,13 @@ This document depicts Azure ML Recommendations APIs.
 
 ##Contents
 
-- [1. General Overview](#1.-general-overview)
-- [2. Limitations](#2.-limitations)
-- [3. APIs – General Information](#3.-integration)
+- [1. General Overview](#1-general-overview)
+- [2. Limitations](#2-limitations)
+- [3. APIs – General Information](#3-integration)
 	- [3.1. Authentication](#3.1.-authentication)
 	- [3.2. Service URI](#3.2.-service-uri)
 	- [3.3. API Version](#3.3.-api-version)
-- [4. Model Basic](#4.-model-basic)
+- [4. Model Basic](#4-model-basic)
 	- [4.1. Create Model](#4.1.-create-a-model)
 	- [4.2. Get Model](#4.2.-get-model)
 	- [4.3. Get All Models](#4.3.-get-all-models)
