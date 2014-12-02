@@ -1,8 +1,8 @@
-<properties title="Azure ML Recommendations JavaScript integration" pageTitle="Azure ML Recommendations JavaScript integration" description="Azure ML Recommendations JavaScript integration – documentation" metaKeywords="" services="machine-learning" solutions="" documentationCenter="" authors="AharonGumnik" manager="paulettm" editor="cgronlun" videoId="" scriptId="" />
+<properties title="Azure Machine Learning Recommendations - JavaScript Integration" pageTitle="Azure Machine Learning Recommendations - JavaScript Integration" description="Azure Machine Learning Recommendations - JavaScript Integration – documentation" metaKeywords="" services="machine-learning" solutions="" documentationCenter="" authors="AharonGumnik" manager="paulettm" editor="cgronlun" videoId="" scriptId="" />
 
 <tags ms.service="machine-learning" ms.workload="data-services" ms.tgt_pltfrm="na" ms.devlang="na" ms.topic="article" ms.date="11/30/2014" ms.author="AharonGumnik" />
 
-# Azure ML Recommendations JavaScript integration
+# Azure Machine Learning Recommendations - JavaScript Integration
 <hr>
 
 This document depict how to integrate your site using JavaScript. The JavaScript enables you to send Data Acquisition events and to consume recommendations once you build a recommendation model. All operations done via JS can be also done from server side.
