@@ -89,36 +89,36 @@ TThere are 5 types of event that the library supports: Click, Recommendation Cli
 This event should be used any time a user clicked on an item. Usually when user clicks on an item a new page is opened with the item details; in this page this event should be triggered.
 
 Parameters:
-* event (string, mandatory) – “click”
-* item (string, mandatory) – Unique identifier of the item
-* itemName (string, optional) – the name of the item
-* itemDescription (string, optional) – the description of the item
-* itemCategory (string, optional) – the category of the item
+- event (string, mandatory) – “click”
+- item (string, mandatory) – Unique identifier of the item
+- itemName (string, optional) – the name of the item
+- itemDescription (string, optional) – the description of the item
+- itemCategory (string, optional) – the category of the item
 		
-			<script>
-				if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({ event: "click", item: "3111718" });
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({ event: "click", item: "3111718" });
+		</script>
 
 Or with optional data:
 
-			<script>
-				if (typeof CloudMLRecommendationsEvent === "undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({event: "click", item: "3111718", itemName: "Plane", itemDescription: "It is a big plane", itemCategory: "Aviation"});
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent === "undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({event: "click", item: "3111718", itemName: "Plane", itemDescription: "It is a big plane", itemCategory: "Aviation"});
+		</script>
 
 
 ####3.2.2. Recommendation Click Event
 This event should be used any time a user clicked on an item that was received from Azure ML Recommendations as a recommended item. Usually when user clicks on an item a new page is opened with the item details; in this page this event should be triggered.
 
 Parameters:
-* event (string, mandatory) – “recommendationclick”
-* item (string, mandatory) – Unique identifier of the item
-* itemName (string, optional) – the name of the item
-* itemDescription (string, optional) – the description of the item
-* itemCategory (string, optional) – the category of the item
-* seeds (string array, optional) – the seeds that generated the recommendation query.
-* recoList (string array, optional) – the result of the recommendation request that generated the item that was clicked.
+- event (string, mandatory) – “recommendationclick”
+- item (string, mandatory) – Unique identifier of the item
+- itemName (string, optional) – the name of the item
+- itemDescription (string, optional) – the description of the item
+- itemCategory (string, optional) – the category of the item
+- seeds (string array, optional) – the seeds that generated the recommendation query.
+- recoList (string array, optional) – the result of the recommendation request that generated the item that was clicked.
 		
 			<script>
 				if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
@@ -127,7 +127,7 @@ Parameters:
 
 Or with optional data:
 
-    			<script>
+			<script>
 				if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
 				CloudMLRecommendationsEvent.push({ event: eventName, item: "198", itemName: "Plane2", itemDescription: "It is a big plane2", itemCategory: "Default2", seeds: ["Seed1", "Seed2"], recoList: ["199", "198", "197"] 					});
 			</script>
