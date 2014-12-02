@@ -147,7 +147,7 @@ Parameters:
 			CloudMLRecommendationsEvent.push({event: "addshopcart", item: "13221118" });
 		</script>
 
-####3.2.4.	Remove Shopping Cart Event
+####3.2.4. Remove Shopping Cart Event
 This event should be used when the user removes an item to the shopping cart.
 
 Parameters:
