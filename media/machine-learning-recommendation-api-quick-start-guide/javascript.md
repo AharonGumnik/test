@@ -120,17 +120,17 @@ Parameters:
 - seeds (string array, optional) – the seeds that generated the recommendation query.
 - recoList (string array, optional) – the result of the recommendation request that generated the item that was clicked.
 		
-			<script>
-				if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({event: "recommendationclick", item: "18899918" });
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({event: "recommendationclick", item: "18899918" });
+		</script>
 
 Or with optional data:
 
-			<script>
-				if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({ event: eventName, item: "198", itemName: "Plane2", itemDescription: "It is a big plane2", itemCategory: "Default2", seeds: ["Seed1", "Seed2"], recoList: ["199", "198", "197"] 					});
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({ event: eventName, item: "198", itemName: "Plane2", itemDescription: "It is a big plane2", itemCategory: "Default2", seeds: ["Seed1", "Seed2"], recoList: ["199", "198", "197"] 				});
+		</script>
 
 
 ####3.2.3. Add Shopping Cart Event
@@ -142,10 +142,10 @@ Parameters:
 * itemDescription (string, optional) – the description of the item
 * itemCategory (string, optional) – the category of the item
 		
-			<script>
-				if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({event: "addshopcart", item: "13221118" });
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({event: "addshopcart", item: "13221118" });
+		</script>
 
 ####3.2.4.	Remove Shopping Cart Event
 This event should be used when the user removes an item to the shopping cart.
@@ -157,10 +157,10 @@ Parameters:
 * itemDescription (string, optional) – the description of the item
 * itemCategory (string, optional) – the category of the item
 		
-			<script>
-				if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({ event: "removeshopcart", item: "111118" });
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({ event: "removeshopcart", item: "111118" });
+		</script>
 
 ####3.2.5. Purchase Event
 This event should be used when the user purchased his shopping cart.
@@ -175,10 +175,10 @@ Purchased format:
 
 The example below shows purchase of 3 items (33, 34, 35), two with all fields populated (item, count, price) and one (item 34) without a price.
 
-			<script>
-				if ( typeof CloudMLRecommendationsEvent == "undefined"){ CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({ event: "purchase", items: [{ item: "33", count: "1", price: "10" }, { item: "34", count: "2" }, { item: "35", count: "1", price: "210" }] }); });
-			</script>
+		<script>
+			if ( typeof CloudMLRecommendationsEvent == "undefined"){ CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({ event: "purchase", items: [{ item: "33", count: "1", price: "10" }, { item: "34", count: "2" }, { item: "35", count: "1", price: "210" }] }); });
+		</script>
 
 ####3.2.6. User Login Event
 Azure ML Recommendations Event library creates and use a cookie in order to identify events that came from the same browser. In order to improve the model results Azure ML Recommendations enables to set a user unique identification that will override the cookie usage.
@@ -188,10 +188,10 @@ This event should be used after the user login to your site.
 Parameters:
 * event (string) – “userlogin”
 * user (string) – unique identification of the user.
-			<script>
-				if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
-				CloudMLRecommendationsEvent.push({event: "userlogin", user: “ABCD10AA” });
-			</script>
+		<script>
+			if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
+			CloudMLRecommendationsEvent.push({event: "userlogin", user: “ABCD10AA” });
+		</script>
 
 ##4. Consume Recommendations via JavaScript
 The code that consumes the recommendation is triggered by some JavaScript event by the client’s webpage. The recommendation response includes the recommended items Ids, their names and their ratings. It’s best to use this option only for a list display of the recommended items – more complex handling (such as adding the item’s metadata) should be done on the server side integration.
@@ -213,12 +213,12 @@ In Parameters:
 
 Example: The following code requests 8 recommendations for item "64f6eb0d-947a-4c18-a16c-888da9e228ba" (and by not specifying includeMetadata – it implicitly says that no metadata is required), it then concatenate the results into a buffer.
 
-			<script>
- 				var reco = CloudMLRecommendationsGetI2IRecommendation("64f6eb0d-947a-4c18-a16c-888da9e228ba", 8, function (reco) {
- 					var buff = "";
- 					for (var ii = 0; ii < reco.length; ii++) {
-   						buff += reco[ii].item + "," + reco[ii].name + "," + reco[ii].rating + "\n";
- 					}
- 					alert(buff);
-				});
-			</script>
+		<script>
+ 			var reco = CloudMLRecommendationsGetI2IRecommendation("64f6eb0d-947a-4c18-a16c-888da9e228ba", 8, function (reco) {
+ 				var buff = "";
+ 				for (var ii = 0; ii < reco.length; ii++) {
+   					buff += reco[ii].item + "," + reco[ii].name + "," + reco[ii].rating + "\n";
+ 				}
+ 				alert(buff);
+			});
+		</script>
