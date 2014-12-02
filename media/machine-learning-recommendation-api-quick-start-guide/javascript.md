@@ -119,8 +119,6 @@ Parameters:
 * itemCategory (string, optional) – the category of the item
 * seeds (string array, optional) – the seeds that generated the recommendation query.
 * recoList (string array, optional) – the result of the recommendation request that generated the item that was clicked.
-
-
 		<script>
 			if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
 			CloudMLRecommendationsEvent.push({event: "recommendationclick", item: "18899918" });
