@@ -94,10 +94,11 @@ Parameters:
 * itemName (string, optional) – the name of the item
 * itemDescription (string, optional) – the description of the item
 * itemCategory (string, optional) – the category of the item
-		<script>
-			if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
-			CloudMLRecommendationsEvent.push({ event: "click", item: "3111718" });
-		</script>
+		
+			<script>
+				if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
+				CloudMLRecommendationsEvent.push({ event: "click", item: "3111718" });
+			</script>
 
 Or with optional data:
 
