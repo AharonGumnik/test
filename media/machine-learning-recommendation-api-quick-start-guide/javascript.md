@@ -56,6 +56,7 @@ In the second phase when you want to show the recommendations on the page you se
 
 ##3. Send Data Acquisition events using JavaScript
 The following steps facilitate sending events:
+
 1.	Include JQuery library.
 
 		<script src="http://msraas.cloudapp.net:8080/scripts/jquery-1.8.2.min.js"></script>
