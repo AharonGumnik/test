@@ -63,10 +63,10 @@ The following steps facilitate sending events:
 2. Include the JS code on your page.
 
 3. Initialize Azure ML Recommendations library with the appropriate parameters.
-<script>
-	CloudMLRecommendationsStart("<base64encoding of username:key>",
-	"<model_id>");
-</script>
+	<script>
+		CloudMLRecommendationsStart("<base64encoding of username:key>",
+		"<model_id>");
+	</script>
 
 4. Send the appropriate event. See detailed section below on all type of events (example of click event)
 	<script>
@@ -75,7 +75,6 @@ The following steps facilitate sending events:
 		}
 		CloudMLRecommendationsEvent.push({ event: "click", item: "18321116" });
 	</script>
-
 
 ###3.1.	Browser Support
 The library supports IE10+ and Chrome.
