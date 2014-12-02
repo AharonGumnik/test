@@ -9,26 +9,19 @@ This document depict how to integrate your site using JavaScript. The JavaScript
 
 ##Contents
 
-<ul>
-[1. General Overview](#1.-general-overview)<br>
-[2. Prerequisites](#2.-prerequisites)<br>
-[3. Send Data Acquisition events using JavaScript](#3.-send-data-acquisition-events-using-javascript)
-<ul>
-	[3.1. Browser Support](#3.1.-browser-support)<br>
-	[3.2. Type of Events](#3.2.-type-of-events)<br>
-    <ul>
-	[3.2.1. Click Event](#3.2.1.-click-event)<br>
-	[3.2.2. Recommendation Click Event](#3.2.2.-recommendation-click-event)<br>
-	[3.2.3. Add Shopping Cart Event](#3.2.3.-add-shopping-cart-event)<br>
-	[3.2.4. Remove Shopping Cart Event](#3.2.4.-remove-shopping-cart-event)<br>
-	[3.2.5. Purchase Event](#3.2.5.-purchase-event)<br>
-	[3.2.6. User Login Event](#3.2.6.-user-login-event)<br>
-    </ul>
-</ul>
-[4. Consume Recommendations via JavaScript](#4.-consume-recommendations-via-javascript)
-<ul>
-[4.1. Consume I2I Recommendations](#4.1.-consume-i2i-recommendations)<br>
-</ul>
+- [1. General Overview](#1-general-overview)
+- [2. Prerequisites](#2-prerequisites)
+- [3. Send Data Acquisition events using JavaScript](#3-send-data-acquisition-events-using-javascript)
+	- [3.1. Browser Support](#31-browser-support)
+	- [3.2. Type of Events](#32-type-of-events)
+		- [3.2.1. Click Event](#321-click-event)
+		- [3.2.2. Recommendation Click Event](#322-recommendation-click-event)
+		- [3.2.3. Add Shopping Cart Event](#323-add-shopping-cart-event)
+		- [3.2.4. Remove Shopping Cart Event](#324-remove-shopping-cart-event)
+		- [3.2.5. Purchase Event](#325-purchase-event)
+		- [3.2.6. User Login Event](#326-user-login-event)
+- [4. Consume Recommendations via JavaScript](#4-consume-recommendations-via-javascript)
+	- [4.1. Consume I2I Recommendations](#41-consume-i2i-recommendations)
 
 ##1. General Overview
 Integrating your site with Azure ML Recommendations consist on 2 Phases:
