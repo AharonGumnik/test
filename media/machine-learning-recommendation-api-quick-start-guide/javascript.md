@@ -33,7 +33,7 @@ Integrating your site with Azure ML Recommendations consist on 2 Phases:
 
 In the first phase you insert into your html pages a small JavaScript library that enables the page to send events as they occur on the html page into Azure ML Recommendations servers (via Data Market):
 
-![1](https://cloud.githubusercontent.com/assets/9913728/5250883/1cbadc62-7999-11e4-87cd-42b4fcc2f393.png)
+![11](https://cloud.githubusercontent.com/assets/9913728/5263442/bebef14c-7a39-11e4-8e4b-1c27b8595a2e.png)
 
 <ins>Phase II</ins>
 
@@ -41,11 +41,11 @@ In the second phase when you want to show the recommendations on the page you se
 
 1.Your server (on the phase of page rendering) calls Azure ML Recommendations Server (via Data Market) to get recommendations. The results include a list of items id. Your server needs to enrich the results with the items Meta data (e.g. images, description) and send the created page to the browser.
 
-![2](https://cloud.githubusercontent.com/assets/9913728/5250887/3495f682-7999-11e4-8a22-2d3170de5acd.png)
+![22](https://cloud.githubusercontent.com/assets/9913728/5263435/b223563a-7a39-11e4-8168-3970186aece5.png)
 
 2.The other option is to use the small JavaScript file from phase one to get a simple list of recommended items. The data received here is leaner than the one in the first option.
 
-![3](https://cloud.githubusercontent.com/assets/9913728/5250895/3c7345da-7999-11e4-9716-07b84def15af.png)
+![33](https://cloud.githubusercontent.com/assets/9913728/5263439/b8493746-7a39-11e4-8cec-f1c75fc6ef3f.png)
 
 ##2. Prerequisites
 
