@@ -58,12 +58,12 @@ In the second phase when you want to show the recommendations on the page you se
 The following steps facilitate sending events:
 1.	Include JQuery library.
 
-			<script src="http://msraas.cloudapp.net:8080/scripts/jquery-1.8.2.min.js"></script>
+		<script src="http://msraas.cloudapp.net:8080/scripts/jquery-1.8.2.min.js"></script>
 2.	Include the JS code on your page.
 
 3.	Initialize Azure ML Recommendations library with the appropriate parameters.
 
-			<script>
+		<script>
 				CloudMLRecommendationsStart("<base64encoding of username:key>",
 				"<model_id>");
             </script>
