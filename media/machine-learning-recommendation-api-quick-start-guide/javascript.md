@@ -56,20 +56,20 @@ In the second phase when you want to show the recommendations on the page you se
 
 ##3. Send Data Acquisition events using JavaScript
 The following steps facilitate sending events:
-1.	Include JQuery library.
+1. Include JQuery library.
 <pre>
 &lt;script src="http://msraas.cloudapp.net:8080/scripts/jquery-1.8.2.min.js"&gt;&lt;/script&gt;
 </pre>
-2.	Include the JS code on your page.
+2. Include the JS code on your page.
 
-3.	Initialize Azure ML Recommendations library with the appropriate parameters.
+3. Initialize Azure ML Recommendations library with the appropriate parameters.
 
 			<script>
 				CloudMLRecommendationsStart("<base64encoding of username:key>",
 				"<model_id>");
             </script>
 
-4.	Send the appropriate event. See detailed section below on all type of events (example of click event)
+4. Send the appropriate event. See detailed section below on all type of events (example of click event)
 
 			<script>
 				if (typeof CloudMLRecommendationsEvent=="undefined { 		
@@ -88,17 +88,18 @@ TThere are 5 types of event that the library supports: Click, Recommendation Cli
 ####3.2.1. Click Event
 This event should be used any time a user clicked on an item. Usually when user clicks on an item a new page is opened with the item details; in this page this event should be triggered.
 
-	Parameters:
-	*	event (string, mandatory) – “click”
-	*	item (string, mandatory) – Unique identifier of the item
-	*	itemName (string, optional) – the name of the item
-	*	itemDescription (string, optional) – the description of the item
-	*	itemCategory (string, optional) – the category of the item
 
-		<script>
+Parameters:
+* event (string, mandatory) – “recommendationclick”
+* item (string, mandatory) – Unique identifier of the item
+* itemName (string, optional) – the name of the item
+* itemDescription (string, optional) – the description of the item
+* itemCategory (string, optional) – the category of the item
+
+	<script>
         	if (typeof CloudMLRecommendationsEvent === "undefined") { CloudMLRecommendationsEvent = []; }
 			CloudMLRecommendationsEvent.push({event: "click", item: "3111718"});
-		</script>
+	</script>
 
 Or with optional data:
 
