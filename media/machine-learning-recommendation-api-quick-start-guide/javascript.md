@@ -85,7 +85,7 @@ The library supports IE10+ and Chrome.
 ###3.2.	Type of Events
 TThere are 5 types of event that the library supports: Click, Recommendation Click, Add to Shop Cart, Remove from Shop Cart and Purchase. There is an additional events that is used to set the user context called Login.
 
-####3.2.1.	Click Event
+####3.2.1. Click Event
 This event should be used any time a user clicked on an item. Usually when user clicks on an item a new page is opened with the item details; in this page this event should be triggered.
 
 	Parameters:
@@ -108,7 +108,7 @@ Or with optional data:
 		</script>
 
 
-####3.2.2.	Recommendation Click Event
+####3.2.2. Recommendation Click Event
 This event should be used any time a user clicked on an item that was received from Azure ML Recommendations as a recommended item. Usually when user clicks on an item a new page is opened with the item details; in this page this event should be triggered.
 
 Parameters:
@@ -134,7 +134,7 @@ Or with optional data:
 	</script>
 
 
-####3.2.3.	Add Shopping Cart Event
+####3.2.3. Add Shopping Cart Event
 This event should be used when the user add an item to the shopping cart.
 Parameters:
 * event (string, mandatory) – “addshopcart”
@@ -148,7 +148,7 @@ Parameters:
 			CloudMLRecommendationsEvent.push({event: "addshopcart", item: "13221118" });
 		</script>
 
-####3.2.4.	Remove Shopping Cart Event
+####3.2.4. Remove Shopping Cart Event
 This event should be used when the user removes an item to the shopping cart.
 
 Parameters:
@@ -162,7 +162,7 @@ Parameters:
 			CloudMLRecommendationsEvent.push({ event: "removeshopcart", item: "111118" });
 		</script>
 
-####3.2.5.	Purchase Event
+####3.2.5. Purchase Event
 This event should be used when the user purchased his shopping cart.
 
 Parameters:
@@ -180,7 +180,7 @@ The example below shows purchase of 3 items (33, 34, 35), two with all fields po
 			CloudMLRecommendationsEvent.push({ event: "purchase", items: [{ item: "33", count: "1", price: "10" }, { item: "34", count: "2" }, { item: "35", count: "1", price: "210" }] }); });
 		</script>
 
-####3.2.6.	User Login Event
+####3.2.6. User Login Event
 Azure ML Recommendations Event library creates and use a cookie in order to identify events that came from the same browser. In order to improve the model results Azure ML Recommendations enables to set a user unique identification that will override the cookie usage.
 
 This event should be used after the user login to your site.
@@ -193,7 +193,7 @@ Parameters:
 			CloudMLRecommendationsEvent.push({event: "userlogin", user: “ABCD10AA” });
 		</script>
 
-##4.	Consume Recommendations via JavaScript
+##4. Consume Recommendations via JavaScript
 The code that consumes the recommendation is triggered by some JavaScript event by the client’s webpage. The recommendation response includes the recommended items Ids, their names and their ratings. It’s best to use this option only for a list display of the recommended items – more complex handling (such as adding the item’s metadata) should be done on the server side integration.
 
 ###4.1 Consume I2I Recommendations
