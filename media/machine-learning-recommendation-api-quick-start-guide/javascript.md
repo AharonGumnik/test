@@ -64,19 +64,18 @@ The following steps facilitate sending events:
 
 3. Initialize Azure ML Recommendations library with the appropriate parameters.
 
-			<script>
-				CloudMLRecommendationsStart("<base64encoding of username:key>",
-				"<model_id>");
-            </script>
+	<script>
+		CloudMLRecommendationsStart("<base64encoding of username:key>",
+		"<model_id>");
+	</script>
 
 4. Send the appropriate event. See detailed section below on all type of events (example of click event)
-
-			<script>
-				if (typeof CloudMLRecommendationsEvent=="undefined { 		
-                	CloudMLRecommendationsEvent = [];
-                }
-				CloudMLRecommendationsEvent.push({ event: "click", item: "18321116" });
-            </script>
+	<script>
+		if (typeof CloudMLRecommendationsEvent=="undefined { 		
+        		CloudMLRecommendationsEvent = [];
+        	}
+		CloudMLRecommendationsEvent.push({ event: "click", item: "18321116" });
+	</script>
 
 
 ###3.1.	Browser Support
@@ -95,7 +94,6 @@ Parameters:
 * itemName (string, optional) – the name of the item
 * itemDescription (string, optional) – the description of the item
 * itemCategory (string, optional) – the category of the item
-
 	<script>
         	if (typeof CloudMLRecommendationsEvent === "undefined") { CloudMLRecommendationsEvent = []; }
 			CloudMLRecommendationsEvent.push({event: "click", item: "3111718"});
@@ -120,8 +118,6 @@ Parameters:
 * itemCategory (string, optional) – the category of the item
 * seeds (string array, optional) – the seeds that generated the recommendation query.
 * recoList (string array, optional) – the result of the recommendation request that generated the item that was clicked.
-
-
 	<script>
 		if (typeof CloudMLRecommendationsEvent=="undefined") { CloudMLRecommendationsEvent = []; }
 		CloudMLRecommendationsEvent.push({event: "recommendationclick", item: "18899918" });
@@ -143,7 +139,6 @@ Parameters:
 * itemName (string, optional) – the name of the item
 * itemDescription (string, optional) – the description of the item
 * itemCategory (string, optional) – the category of the item
-
 		<script>
 			if (typeof CloudMLRecommendationsEvent == "undefined") { CloudMLRecommendationsEvent = []; }
 			CloudMLRecommendationsEvent.push({event: "addshopcart", item: "13221118" });
