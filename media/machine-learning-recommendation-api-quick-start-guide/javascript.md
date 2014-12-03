@@ -176,7 +176,7 @@ The example below shows purchase of 3 items (33, 34, 35), two with all fields po
 
 		<script>
 			if ( typeof CloudMLRecommendationsEvent == "undefined"){ CloudMLRecommendationsEvent = []; }
-			CloudMLRecommendationsEvent.push({ event: "purchase", items: [{ item: "33", count: "1", price: "10" }, { item: "34", count: "2" }, { item: "35", count: "1", price: "210" }] }); });
+			CloudMLRecommendationsEvent.push({ event: "purchase", items: [{ item: "33", count: "1", price: "10" }, { item: "34", count: "2" }, { item: "35", count: "1", price: "210" }] });
 		</script>
 
 ####3.2.6. User Login Event
