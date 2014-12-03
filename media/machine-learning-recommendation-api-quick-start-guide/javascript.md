@@ -82,7 +82,7 @@ The following steps facilitate sending events:
 The library supports IE10+ and Chrome.
 
 ###3.2.	Type of Events
-TThere are 5 types of event that the library supports: Click, Recommendation Click, Add to Shop Cart, Remove from Shop Cart and Purchase. There is an additional events that is used to set the user context called Login.
+There are 5 types of event that the library supports: Click, Recommendation Click, Add to Shop Cart, Remove from Shop Cart and Purchase. There is an additional event that is used to set the user context called Login.
 
 ####3.2.1. Click Event
 This event should be used any time a user clicked on an item. Usually when user clicks on an item a new page is opened with the item details; in this page this event should be triggered.
