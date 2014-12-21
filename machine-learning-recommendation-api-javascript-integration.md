@@ -35,6 +35,8 @@ In the first phase you insert into your html pages a small JavaScript library th
 
 ![11](https://cloud.githubusercontent.com/assets/9913728/5263442/bebef14c-7a39-11e4-8e4b-1c27b8595a2e.png)
 
+![Image1][1]
+
 <ins>Phase II</ins>
 
 In the second phase when you want to show the recommendations on the page you select one of the following options:
@@ -221,3 +223,6 @@ Example: The following code requests 8 recommendations for item "64f6eb0d-947a-4
  				alert(buff);
 			});
 		</script>
+
+
+[1]: ./media/machine-learning-recommendation-api-javascript-integration/image.png
